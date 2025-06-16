@@ -138,12 +138,32 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(asset/img/fundo_of.jpg);
     background-size: cover;      
     background-repeat: no-repeat;   
     background-position: center;    
     background-attachment: fixed;
+    animation: trocaImagem 25s infinite;
+    height: 55em;
 }
+
+@keyframes trocaImagem {
+    0% {
+        background-image: url('asset/img/fundo_of.jpg');
+    }
+
+    33% {
+        background-image: url('asset/img/fundo2.jpg');
+    }
+
+    66% {
+        background-image: url('asset/img/fundo3.jpg');
+    }
+
+    100% {
+        background-image: url('asset/img/fundo_of.jpg');
+    }
+}
+
 .slogan{
     width: 80%;
     height: 100vh;
@@ -189,6 +209,7 @@ nav{
     width:90%;
     height: 14%;
     padding-top: 110px;
+    font-family: "Kalam";
 }
 .title h1{
     font-size: 45px;
@@ -203,13 +224,13 @@ nav{
     align-items: center;
 }
 .foto{
-    width: 180px;
-    height: 38%;
+    width: 90%;
+    height: 80%;
     background-color: #0D0D0D;
     border-radius: 15px;
 }
 .foto img{
-    width: 180px;
+    width: 100%;
     height: 100%;
     border-radius: 15px;
 }
@@ -239,6 +260,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #F5F5F5;
 }
 .sub-title2{
     height: 10%;
@@ -256,7 +278,7 @@ nav{
     align-items: center;
 }
 .foto2{
-    width: 20%;
+    width: 30%;
     height:60%;
     background-color: #0D0D0D;
     border-radius: 15px;
@@ -273,20 +295,22 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F5F5F5;
 }
 .mapa{
     height: 100%;
-    width: 45%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F5F5F5;
 }
 .mapa img{
     margin-top: 110px;
     height: 65%;
     width: 70%;
-    background-color: #0D0D0D;
     border-radius: 15px;
+    box-shadow: 0 0 80px rgba(0,0,0,0.1);
 }
 .info{
     height: 100%;
@@ -304,6 +328,7 @@ nav{
     justify-content: center;
     align-items: center;
     margin-bottom: -85px;
+    font-family: "Kalam";
 }
 .title3 h1{
     font-size: 45px;
@@ -324,11 +349,13 @@ nav{
     align-items: center;
     margin-top: -150px;
     font-size: 25px;
+    font-family: "Kalam";
 }
 .reservas{
     width: 100%;
     height: 100vh;
     display: flex;
+    background-color: #F5F5F5;
 }
 .check{
     width: 45%;
@@ -337,13 +364,23 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+.check h1{
+    width: 100%;
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kalam";
 }
 .form-container {
-    background-color: #e4e1ec;
+    background-color: #F5F5F5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 350px; 
+    width: 350px;
+    margin-top: -180px;
 }
 form {
     display: grid;
@@ -376,7 +413,126 @@ input[type="number"] {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Kalam";
 }
 .btn:hover {
     background-color: #2a2550;
+}
+.sub-title4{
+    padding-top: 110px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2550;
+    flex-direction: column;
+}
+.zap{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 115px;
+    font-size: 25px;
+}
+.zap p{
+    margin-right: 75px;
+}
+.gmail{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.title5{
+    height: 0px;
+    width: 71%;
+    padding: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kalam";
+}
+.title5 h1{
+    margin-top: 120px;
+    font-size: 20px;
+}
+.info2{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon_whatsapp{
+    font-size: 40px;
+    color: gray;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.icon_email{
+    font-size: 40px;
+    color: gray;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #00B5B2;
+    display: flex;
+    color: #F5F5F5;
+}
+.logo2{
+    height: 100px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo2 img{
+    height: 70px;
+    width: 45%;
+}
+.local{
+    height: 100px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rede{
+    height: 100px;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons {
+    bottom: 20px;
+    right: 20px;
+}
+.social-icons i {
+    font-size: 30px;
+    color: #F5F5F5;
+    margin: 0 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #0073a8;
+    transform: scale(1.2);
 }
